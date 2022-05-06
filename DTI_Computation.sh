@@ -12,11 +12,12 @@ DTI_Computation#!/bin/sh
 #Preprocessing: b0 extraction, brain extraction, eddy-correction
 #Processing: DTI estimation
 
-subjs="sub-ON02747"
+subjs=$1
 #Put your subject folders in here
 
 #Write your main directory here
-main_dir="/fast/hv_bids"
+main_dir="/data/NIMH_scratch/MEG_Hackathon/hv_bids" 
+#main_dir="/fast/hv_bids"
 cd ${main_dir}
 
 #Extract b0
